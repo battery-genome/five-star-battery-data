@@ -1,0 +1,107 @@
+{
+  "schema_version": "battery-genome-learning-module/v1alpha1",
+  "id": "fsbd-applications",
+  "course_id": "five-star-battery-data",
+  "slug": "applications",
+  "title": "Applications",
+  "summary": "Finish the course by connecting the five-star framework to applied examples, reflection, and assessment.",
+  "order": 3,
+  "duration": "20 min",
+  "lesson_kinds": [
+    "lecture-notes",
+    "video",
+    "quiz"
+  ],
+  "outcomes": [
+    "See how the framework applies in practice",
+    "Reflect on how the course connects to real battery-data workflows",
+    "Complete the final assessment and review next steps"
+  ],
+  "repo_path": "modules/capstone",
+  "legacy_source_paths": [
+    "mooc/applications/applications.rst",
+    "mooc/discussion/discussion.rst",
+    "mooc/quiz/quiz.rst",
+    "mooc/summary/summary.rst"
+  ],
+  "linked_dataset_ids": [],
+  "linked_model_ids": [],
+  "linked_cell_ids": [],
+  "linked_parameter_set_ids": [],
+  "linked_benchmark_workflow_ids": [],
+  "supporting_asset_paths": [],
+  "artifacts": [],
+  "lessons": [
+    {
+      "id": "fsbd-lesson-capstone",
+      "module_id": "fsbd-applications",
+      "slug": "applications-reflection-and-assessment",
+      "title": "Lesson 7: Applications, reflection, and assessment",
+      "summary": "Finish the MOOC with applications, discussion, a final quiz, and next steps.",
+      "order": 1,
+      "duration": "20 min",
+      "overview_path": "modules/course/lessons/lesson-7-overview.md",
+      "resources": [],
+      "components": [
+        {
+          "id": "fsbd-capstone-applications-notes",
+          "kind": "lecture-notes",
+          "title": "Applications overview",
+          "summary": "Notes introducing practical applications of the five-star framework.",
+          "content_path": "modules/capstone/lessons/applications.md",
+          "duration": "4 min"
+        },
+        {
+          "id": "fsbd-capstone-demo-1",
+          "kind": "video",
+          "title": "Application demo 1",
+          "summary": "Short demonstration of a five-star workflow in practice.",
+          "href": "https://www.youtube.com/watch?v=FuKcv8sDW4s",
+          "duration": "2 min"
+        },
+        {
+          "id": "fsbd-capstone-demo-2",
+          "kind": "video",
+          "title": "Application demo 2",
+          "summary": "Second applied example of structured, linked battery data.",
+          "href": "https://www.youtube.com/watch?v=ETMbHxYY6lo",
+          "duration": "2 min"
+        },
+        {
+          "id": "fsbd-capstone-demo-3",
+          "kind": "video",
+          "title": "Application demo 3",
+          "summary": "Third demonstration linking the course to real workflows.",
+          "href": "https://www.youtube.com/watch?v=powSoiDHXt0",
+          "duration": "2 min"
+        },
+        {
+          "id": "fsbd-capstone-discussion-video",
+          "kind": "video",
+          "title": "Student discussion",
+          "summary": "Discussion on experiences applying Five-Star Battery Data in research settings.",
+          "content_path": "modules/capstone/lessons/discussion.md",
+          "href": "https://www.youtube.com/watch?v=K3Kqk8M3QO0",
+          "duration": "5 min"
+        },
+        {
+          "id": "fsbd-capstone-quiz",
+          "kind": "quiz",
+          "title": "Course quiz",
+          "summary": "Final assessment delivered through the course Google Form.",
+          "content_path": "modules/capstone/lessons/quiz.md",
+          "href": "https://docs.google.com/forms/d/e/1Naj85GWtMkeW9BG2bAmkUNTYnSXHFXHhA2pxY6eodkc/viewform",
+          "duration": "10 min"
+        },
+        {
+          "id": "fsbd-capstone-summary",
+          "kind": "lecture-notes",
+          "title": "Summary and next steps",
+          "summary": "Short recap of the five-star ladder and suggestions for applying it to your own datasets.",
+          "content_path": "modules/capstone/lessons/summary.md",
+          "duration": "5 min"
+        }
+      ]
+    }
+  ]
+}

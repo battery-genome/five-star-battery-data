@@ -1,0 +1,61 @@
+{
+  "schema_version": "battery-genome-learning-course/v1alpha1",
+  "id": "five-star-battery-data",
+  "slug": "five-star-battery-data",
+  "title": "Five-Star Battery Data",
+  "summary": "Most battery data never becomes truly reusable. This course shows you how to turn raw files into open, structured, connected research assets that other people can find, trust, and build on.",
+  "status": "Published",
+  "level": "Introductory",
+  "duration": "4-6 hours",
+  "provider": "Battery 2030+",
+  "audience": [
+    "Researchers",
+    "Data stewards",
+    "Developers"
+  ],
+  "tags": [
+    "Battery data",
+    "FAIR",
+    "Linked data",
+    "Ontology"
+  ],
+  "source_repository": "https://github.com/jsimonclark/five-star-battery-data",
+  "published_url": "/learn/courses/five-star-battery-data",
+  "legacy_published_url": "https://jsimonclark.github.io/five-star-battery-data/",
+  "renderer": "next-native",
+  "lesson_component_kinds": [
+    "video",
+    "lecture-notes",
+    "notebook",
+    "assignment",
+    "quiz"
+  ],
+  "module_order": [
+    "fsbd-introduction",
+    "fsbd-five-star-battery-data",
+    "fsbd-applications"
+  ],
+  "license": "CC BY 4.0",
+  "linked_dataset_ids": [
+    "sintef-cycling-hppc",
+    "lnmo-thermal-campaign",
+    "atlas-21700-rpt",
+    "atlas-21700-aging"
+  ],
+  "linked_model_ids": [
+    "pybop-fit-pack",
+    "pybamm-spme-nmc811"
+  ],
+  "linked_cell_ids": [
+    "ifpp45-173-115-b",
+    "atlas-21700-nmc811"
+  ],
+  "manifest": {
+    "catalogId": "battery-genome-learning",
+    "sourceRepository": "https://github.com/jsimonclark/five-star-battery-data",
+    "renderer": "next-native",
+    "contentBaseUrl": "/learn/courses/five-star-battery-data",
+    "sourceRevision": "main",
+    "lastSynced": "2026-03-13T00:00:00Z"
+  }
+}

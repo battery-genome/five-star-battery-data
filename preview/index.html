@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Five-Star Battery Data Preview</title>
+    <script>
+      (() => {
+        const key = "fsbd-preview-theme";
+        let stored = null;
+        try {
+          stored = window.localStorage.getItem(key);
+        } catch (error) {}
+        const theme =
+          stored === "light" || stored === "dark"
+            ? stored
+            : window.matchMedia("(prefers-color-scheme: light)").matches
+              ? "light"
+              : "dark";
+        document.documentElement.dataset.theme = theme;
+      })();
+    </script>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="background-orb orb-one"></div>
+    <div class="background-orb orb-two"></div>
+    <div class="background-grid"></div>
+
+    <header class="site-header">
+      <div class="page-wrap">
+        <div class="brand-row">
+          <div>
+            <p class="eyebrow">Battery Genome Learning Preview</p>
+            <h1 class="brand-title">Five-Star Battery Data</h1>
+            <p class="brand-copy">
+              A manifest-driven preview surface that mirrors the Battery Genome learning
+              product instead of the legacy Sphinx MOOC shell.
+            </p>
+          </div>
+          <div class="header-actions">
+            <a id="header-start-link" class="pill-action-success" href="#module/fsbd-introduction">Start the course</a>
+            <a class="pill-action-primary" href="#course">Course overview</a>
+            <div class="theme-toggle" role="group" aria-label="Theme switcher">
+              <button class="theme-button" type="button" data-theme-choice="light" aria-pressed="false">Light</button>
+              <button class="theme-button" type="button" data-theme-choice="dark" aria-pressed="false">Dark</button>
+            </div>
+            <a
+              id="header-github-link"
+              class="icon-link is-hidden"
+              href="#"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Open GitHub repository"
+              title="Open GitHub repository"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path
+                  fill="currentColor"
+                  d="M12 .5C5.65.5.5 5.66.5 12.02c0 5.09 3.29 9.4 7.86 10.92.58.11.79-.25.79-.56 0-.28-.01-1.19-.02-2.15-3.2.7-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.69.08-.69 1.15.08 1.75 1.18 1.75 1.18 1.02 1.75 2.67 1.25 3.32.96.1-.74.4-1.25.72-1.54-2.56-.29-5.25-1.28-5.25-5.71 0-1.26.45-2.29 1.18-3.09-.12-.29-.51-1.47.11-3.07 0 0 .97-.31 3.16 1.18a10.9 10.9 0 0 1 5.76 0c2.19-1.49 3.15-1.18 3.15-1.18.63 1.6.24 2.78.12 3.07.73.8 1.18 1.83 1.18 3.09 0 4.44-2.7 5.41-5.27 5.69.41.36.78 1.08.78 2.18 0 1.57-.01 2.83-.01 3.22 0 .31.21.68.8.56a11.53 11.53 0 0 0 7.85-10.92C23.5 5.66 18.35.5 12 .5Z"
+                ></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="page-wrap section-shell">
+      <div id="app" class="app-shell" aria-live="polite">
+        <section class="glass-panel loading-state">
+          <p class="field-label">Loading</p>
+          <h2>Reading learning manifest...</h2>
+          <p class="section-copy">
+            If this stalls, make sure you are serving the repo over HTTP and that
+            <code>exports/learning-manifest.json</code> exists.
+          </p>
+        </section>
+      </div>
+    </main>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>

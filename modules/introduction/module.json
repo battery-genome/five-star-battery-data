@@ -1,0 +1,71 @@
+{
+  "schema_version": "battery-genome-learning-module/v1alpha1",
+  "id": "fsbd-introduction",
+  "course_id": "five-star-battery-data",
+  "slug": "introduction",
+  "title": "Introduction",
+  "summary": "Start the course with the framing, motivation, and orientation needed for the rest of the learning journey.",
+  "order": 1,
+  "duration": "20 min",
+  "lesson_kinds": [
+    "video",
+    "lecture-notes"
+  ],
+  "outcomes": [
+    "Understand the overall purpose of Five-Star Battery Data",
+    "See how the course moves from publication to linked battery knowledge",
+    "Get oriented before starting the core five-star lessons"
+  ],
+  "repo_path": "modules/introduction",
+  "legacy_source_paths": [
+    "mooc/introduction/introduction.rst"
+  ],
+  "linked_dataset_ids": [],
+  "linked_model_ids": [],
+  "linked_cell_ids": [],
+  "linked_parameter_set_ids": [],
+  "linked_benchmark_workflow_ids": [],
+  "supporting_asset_paths": [
+    "assets/videos/introduction.mp4",
+    "assets/images/flag-of-europe.png"
+  ],
+  "artifacts": [],
+  "lessons": [
+    {
+      "id": "fsbd-lesson-introduction",
+      "module_id": "fsbd-introduction",
+      "slug": "welcome-and-orientation",
+      "title": "Lesson 1: Welcome and orientation",
+      "summary": "Start the course with the five-star ladder, the course framing, and the introduction video.",
+      "order": 1,
+      "duration": "20 min",
+      "overview_path": "modules/course/lessons/lesson-1-overview.md",
+      "resources": [
+        {
+          "title": "Introduction video archive",
+          "path": "assets/videos/introduction.mp4",
+          "media_type": "video/mp4"
+        }
+      ],
+      "components": [
+        {
+          "id": "fsbd-introduction-video",
+          "kind": "video",
+          "title": "Course introduction video",
+          "summary": "A short orientation to the course and the five-star ladder.",
+          "content_path": "modules/introduction/lessons/introduction-video.md",
+          "href": "https://youtu.be/PA69m8wvdgs",
+          "duration": "6 min"
+        },
+        {
+          "id": "fsbd-introduction-notes",
+          "kind": "lecture-notes",
+          "title": "Introduction and course overview",
+          "summary": "Lecture notes covering the course purpose, learning goals, and structure.",
+          "content_path": "modules/introduction/lessons/introduction.md",
+          "duration": "10 min"
+        }
+      ]
+    }
+  ]
+}

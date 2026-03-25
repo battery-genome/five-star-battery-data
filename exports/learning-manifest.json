@@ -1,0 +1,672 @@
+{
+  "schema_version": "battery-genome-learning-export/v1alpha1",
+  "generated_at": "2026-03-14T14:38:50Z",
+  "generated_from": {
+    "course": "course.json",
+    "modules_dir": "modules"
+  },
+  "course": {
+    "schema_version": "battery-genome-learning-course/v1alpha1",
+    "id": "five-star-battery-data",
+    "slug": "five-star-battery-data",
+    "title": "Five-Star Battery Data",
+    "summary": "Most battery data never becomes truly reusable. This course shows you how to turn raw files into open, structured, connected research assets that other people can find, trust, and build on.",
+    "status": "Published",
+    "level": "Introductory",
+    "duration": "4-6 hours",
+    "provider": "Battery 2030+",
+    "audience": [
+      "Researchers",
+      "Data stewards",
+      "Developers"
+    ],
+    "tags": [
+      "Battery data",
+      "FAIR",
+      "Linked data",
+      "Ontology"
+    ],
+    "source_repository": "https://github.com/jsimonclark/five-star-battery-data",
+    "published_url": "/learn/courses/five-star-battery-data",
+    "legacy_published_url": "https://jsimonclark.github.io/five-star-battery-data/",
+    "renderer": "next-native",
+    "lesson_component_kinds": [
+      "video",
+      "lecture-notes",
+      "notebook",
+      "assignment",
+      "quiz"
+    ],
+    "module_order": [
+      "fsbd-introduction",
+      "fsbd-five-star-battery-data",
+      "fsbd-applications"
+    ],
+    "license": "CC BY 4.0",
+    "linked_dataset_ids": [
+      "sintef-cycling-hppc",
+      "lnmo-thermal-campaign",
+      "atlas-21700-rpt",
+      "atlas-21700-aging"
+    ],
+    "linked_model_ids": [
+      "pybop-fit-pack",
+      "pybamm-spme-nmc811"
+    ],
+    "linked_cell_ids": [
+      "ifpp45-173-115-b",
+      "atlas-21700-nmc811"
+    ],
+    "manifest": {
+      "catalogId": "battery-genome-learning",
+      "sourceRepository": "https://github.com/jsimonclark/five-star-battery-data",
+      "renderer": "next-native",
+      "contentBaseUrl": "/learn/courses/five-star-battery-data",
+      "sourceRevision": "main",
+      "lastSynced": "2026-03-13T00:00:00Z"
+    }
+  },
+  "modules": [
+    {
+      "schema_version": "battery-genome-learning-module/v1alpha1",
+      "id": "fsbd-introduction",
+      "course_id": "five-star-battery-data",
+      "slug": "introduction",
+      "title": "Introduction",
+      "summary": "Start the course with the framing, motivation, and orientation needed for the rest of the learning journey.",
+      "order": 1,
+      "duration": "20 min",
+      "lesson_kinds": [
+        "video",
+        "lecture-notes"
+      ],
+      "outcomes": [
+        "Understand the overall purpose of Five-Star Battery Data",
+        "See how the course moves from publication to linked battery knowledge",
+        "Get oriented before starting the core five-star lessons"
+      ],
+      "repo_path": "modules/introduction",
+      "legacy_source_paths": [
+        "mooc/introduction/introduction.rst"
+      ],
+      "linked_dataset_ids": [],
+      "linked_model_ids": [],
+      "linked_cell_ids": [],
+      "linked_parameter_set_ids": [],
+      "linked_benchmark_workflow_ids": [],
+      "supporting_asset_paths": [
+        "assets/videos/introduction.mp4",
+        "assets/images/flag-of-europe.png"
+      ],
+      "artifacts": [],
+      "lessons": [
+        {
+          "id": "fsbd-lesson-introduction",
+          "module_id": "fsbd-introduction",
+          "slug": "welcome-and-orientation",
+          "title": "Lesson 1: Welcome and orientation",
+          "summary": "Start the course with the five-star ladder, the course framing, and the introduction video.",
+          "order": 1,
+          "duration": "20 min",
+          "overview_path": "modules/course/lessons/lesson-1-overview.md",
+          "resources": [
+            {
+              "title": "Introduction video archive",
+              "path": "assets/videos/introduction.mp4",
+              "media_type": "video/mp4"
+            }
+          ],
+          "components": [
+            {
+              "id": "fsbd-introduction-video",
+              "kind": "video",
+              "title": "Course introduction video",
+              "summary": "A short orientation to the course and the five-star ladder.",
+              "content_path": "modules/introduction/lessons/introduction-video.md",
+              "href": "https://youtu.be/PA69m8wvdgs",
+              "duration": "6 min"
+            },
+            {
+              "id": "fsbd-introduction-notes",
+              "kind": "lecture-notes",
+              "title": "Introduction and course overview",
+              "summary": "Lecture notes covering the course purpose, learning goals, and structure.",
+              "content_path": "modules/introduction/lessons/introduction.md",
+              "duration": "10 min"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "schema_version": "battery-genome-learning-module/v1alpha1",
+      "id": "fsbd-five-star-battery-data",
+      "course_id": "five-star-battery-data",
+      "slug": "five-star-battery-data",
+      "title": "Five-Star Battery Data",
+      "summary": "Work through the five core lessons that move battery data from public availability to graph-linked knowledge.",
+      "order": 2,
+      "duration": "3.5-4.5 hours",
+      "lesson_kinds": [
+        "video",
+        "lecture-notes",
+        "notebook",
+        "assignment"
+      ],
+      "outcomes": [
+        "Apply each step of the five-star battery data framework",
+        "Practice publication, structuring, open formats, metadata, and linking through notebooks",
+        "Build a concrete understanding of how reusable battery data is created"
+      ],
+      "repo_path": "modules/five-star-battery-data",
+      "legacy_source_paths": [
+        "mooc/star-1/star-1-notebook.ipynb",
+        "mooc/star-1/star-1-exercises.md",
+        "mooc/star-2/star-2-notebook.ipynb",
+        "mooc/star-2/star-2-exercises.md",
+        "mooc/star-3/star-3-notebook.ipynb",
+        "mooc/star-3/star-3-exercises.md",
+        "mooc/star-4/star-4-notebook.ipynb",
+        "mooc/star-4/star-4-exercises.md",
+        "mooc/star-5/star-5-notebook.ipynb",
+        "mooc/star-5/star-5-exercises.md"
+      ],
+      "linked_dataset_ids": [
+        "sintef-cycling-hppc",
+        "lnmo-thermal-campaign",
+        "atlas-21700-rpt",
+        "atlas-21700-aging"
+      ],
+      "linked_model_ids": [
+        "pybop-fit-pack",
+        "pybamm-spme-nmc811"
+      ],
+      "linked_cell_ids": [
+        "ifpp45-173-115-b",
+        "atlas-21700-nmc811"
+      ],
+      "linked_parameter_set_ids": [],
+      "linked_benchmark_workflow_ids": [],
+      "supporting_asset_paths": [
+        "assets/images/star-1/zenodo-sandbox-applications.png",
+        "assets/images/star-1/zenodo-sandbox-create-token.png",
+        "assets/images/star-1/zenodo-sandbox-new-token.png"
+      ],
+      "artifacts": [
+        {
+          "id": "fsbd-artifact-star-1-structured-csv",
+          "title": "Star 1 structured battery data CSV",
+          "path": "modules/star-1/artifacts/structured_battery_data.bdf.csv",
+          "media_type": "text/csv"
+        },
+        {
+          "id": "fsbd-artifact-star-2-raw-cycler-output",
+          "title": "Star 2 raw cycler output CSV",
+          "path": "modules/star-2/artifacts/raw_data_output_from_cycler.csv",
+          "media_type": "text/csv"
+        },
+        {
+          "id": "fsbd-artifact-star-2-structured-csv",
+          "title": "Star 2 structured battery data CSV",
+          "path": "modules/star-2/artifacts/structured_battery_data.bdf.csv",
+          "media_type": "text/csv"
+        },
+        {
+          "id": "fsbd-artifact-star-3-structured-csv",
+          "title": "Star 3 structured battery data CSV",
+          "path": "modules/star-3/artifacts/structured_battery_data.bdf.csv",
+          "media_type": "text/csv"
+        },
+        {
+          "id": "fsbd-artifact-star-3-structured-hdf5",
+          "title": "Star 3 structured battery data HDF5",
+          "path": "modules/star-3/artifacts/structured_battery_data.bdf.h5",
+          "media_type": "application/x-hdf5"
+        },
+        {
+          "id": "fsbd-artifact-star-3-structured-json",
+          "title": "Star 3 structured battery data JSON",
+          "path": "modules/star-3/artifacts/structured_battery_data.bdf.json",
+          "media_type": "application/json"
+        },
+        {
+          "id": "fsbd-artifact-star-3-structured-parquet",
+          "title": "Star 3 structured battery data Parquet",
+          "path": "modules/star-3/artifacts/structured_battery_data.bdf.parquet",
+          "media_type": "application/vnd.apache.parquet"
+        },
+        {
+          "id": "fsbd-artifact-star-3-structured-text",
+          "title": "Star 3 structured battery data TXT",
+          "path": "modules/star-3/artifacts/structured_battery_data.bdf.txt",
+          "media_type": "text/plain"
+        },
+        {
+          "id": "fsbd-artifact-star-4-structured-csv",
+          "title": "Star 4 structured battery data CSV",
+          "path": "modules/star-4/artifacts/structured_battery_data.bdf.csv",
+          "media_type": "text/csv"
+        },
+        {
+          "id": "fsbd-artifact-star-4-metadata-jsonld",
+          "title": "Star 4 metadata JSON-LD",
+          "path": "modules/star-4/artifacts/metadata.jsonld",
+          "media_type": "application/ld+json"
+        }
+      ],
+      "lessons": [
+        {
+          "id": "fsbd-lesson-star-1",
+          "module_id": "fsbd-five-star-battery-data",
+          "slug": "publish-open-battery-data",
+          "title": "Lesson 2: Publish open battery data",
+          "summary": "Learn the one-star workflow through a short walkthrough, lecture notes, a notebook, and a self-check assignment.",
+          "order": 1,
+          "duration": "35 min",
+          "overview_path": "modules/course/lessons/lesson-2-overview.md",
+          "resources": [
+            {
+              "title": "Star 1 structured battery data CSV",
+              "path": "modules/star-1/artifacts/structured_battery_data.bdf.csv",
+              "media_type": "text/csv"
+            },
+            {
+              "title": "Zenodo Sandbox applications screenshot",
+              "path": "assets/images/star-1/zenodo-sandbox-applications.png",
+              "media_type": "image/png"
+            },
+            {
+              "title": "Zenodo Sandbox token creation screenshot",
+              "path": "assets/images/star-1/zenodo-sandbox-create-token.png",
+              "media_type": "image/png"
+            },
+            {
+              "title": "Zenodo Sandbox new token screenshot",
+              "path": "assets/images/star-1/zenodo-sandbox-new-token.png",
+              "media_type": "image/png"
+            }
+          ],
+          "components": [
+            {
+              "id": "fsbd-star-1-video",
+              "kind": "video",
+              "title": "Star 1 video walkthrough",
+              "summary": "Overview of public repositories, licensing, and the Zenodo Sandbox workflow.",
+              "href": "https://www.youtube.com/watch?v=MSOuXOc7Ctc",
+              "duration": "8 min"
+            },
+            {
+              "id": "fsbd-star-1-notes",
+              "kind": "lecture-notes",
+              "title": "Star 1 lecture notes",
+              "summary": "Lecture notes covering the meaning and importance of one-star battery data.",
+              "content_path": "modules/star-1/lessons/star-1-notes.md",
+              "duration": "7 min"
+            },
+            {
+              "id": "fsbd-star-1-notebook",
+              "kind": "notebook",
+              "title": "Star 1 notebook",
+              "summary": "Hands-on notebook for publishing a dataset and metadata to Zenodo Sandbox.",
+              "content_path": "modules/star-1/lessons/star-1-notebook.ipynb",
+              "duration": "15 min",
+              "rendered_path": "exports/notebooks/modules/star-1/lessons/star-1-notebook.html",
+              "rendered_media_type": "text/html",
+              "renderer": "nbconvert-html"
+            },
+            {
+              "id": "fsbd-star-1-assignment",
+              "kind": "assignment",
+              "title": "Star 1 self-check",
+              "summary": "Short assignment to confirm understanding of repository workflows and licensing.",
+              "content_path": "modules/star-1/lessons/star-1-exercises.md",
+              "duration": "5 min"
+            }
+          ]
+        },
+        {
+          "id": "fsbd-lesson-star-2",
+          "module_id": "fsbd-five-star-battery-data",
+          "slug": "structure-battery-test-data",
+          "title": "Lesson 3: Structure battery test data",
+          "summary": "Move from raw cycler output to structured battery data using a walkthrough, notes, notebook, and assignment.",
+          "order": 2,
+          "duration": "40 min",
+          "overview_path": "modules/course/lessons/lesson-3-overview.md",
+          "resources": [
+            {
+              "title": "Star 2 raw cycler output CSV",
+              "path": "modules/star-2/artifacts/raw_data_output_from_cycler.csv",
+              "media_type": "text/csv"
+            },
+            {
+              "title": "Star 2 structured battery data CSV",
+              "path": "modules/star-2/artifacts/structured_battery_data.bdf.csv",
+              "media_type": "text/csv"
+            }
+          ],
+          "components": [
+            {
+              "id": "fsbd-star-2-video",
+              "kind": "video",
+              "title": "Star 2 video walkthrough",
+              "summary": "Overview of machine-readable structured data for battery testing.",
+              "href": "https://www.youtube.com/watch?v=_z6Xtbx8QwM",
+              "duration": "8 min"
+            },
+            {
+              "id": "fsbd-star-2-notes",
+              "kind": "lecture-notes",
+              "title": "Star 2 lecture notes",
+              "summary": "Lecture notes on tabular structure, labels, and standardization.",
+              "content_path": "modules/star-2/lessons/star-2-notes.md",
+              "duration": "7 min"
+            },
+            {
+              "id": "fsbd-star-2-notebook",
+              "kind": "notebook",
+              "title": "Star 2 notebook",
+              "summary": "Notebook for transforming raw cycler output into structured BDF-style tables.",
+              "content_path": "modules/star-2/lessons/star-2-notebook.ipynb",
+              "duration": "20 min",
+              "rendered_path": "exports/notebooks/modules/star-2/lessons/star-2-notebook.html",
+              "rendered_media_type": "text/html",
+              "renderer": "nbconvert-html"
+            },
+            {
+              "id": "fsbd-star-2-assignment",
+              "kind": "assignment",
+              "title": "Star 2 self-check",
+              "summary": "Assignment to confirm understanding of structured battery data.",
+              "content_path": "modules/star-2/lessons/star-2-exercises.md",
+              "duration": "5 min"
+            }
+          ]
+        },
+        {
+          "id": "fsbd-lesson-star-3",
+          "module_id": "fsbd-five-star-battery-data",
+          "slug": "package-open-battery-formats",
+          "title": "Lesson 4: Package open battery formats",
+          "summary": "Compare open data formats through a walkthrough, notes, notebook, and self-check assignment.",
+          "order": 3,
+          "duration": "40 min",
+          "overview_path": "modules/course/lessons/lesson-4-overview.md",
+          "resources": [
+            {
+              "title": "Star 3 structured battery data CSV",
+              "path": "modules/star-3/artifacts/structured_battery_data.bdf.csv",
+              "media_type": "text/csv"
+            },
+            {
+              "title": "Star 3 structured battery data JSON",
+              "path": "modules/star-3/artifacts/structured_battery_data.bdf.json",
+              "media_type": "application/json"
+            },
+            {
+              "title": "Star 3 structured battery data Parquet",
+              "path": "modules/star-3/artifacts/structured_battery_data.bdf.parquet",
+              "media_type": "application/vnd.apache.parquet"
+            },
+            {
+              "title": "Star 3 structured battery data HDF5",
+              "path": "modules/star-3/artifacts/structured_battery_data.bdf.h5",
+              "media_type": "application/x-hdf5"
+            }
+          ],
+          "components": [
+            {
+              "id": "fsbd-star-3-video",
+              "kind": "video",
+              "title": "Star 3 video walkthrough",
+              "summary": "Overview of open formats and portability tradeoffs.",
+              "href": "https://www.youtube.com/watch?v=giL9KwJi8BI",
+              "duration": "8 min"
+            },
+            {
+              "id": "fsbd-star-3-notes",
+              "kind": "lecture-notes",
+              "title": "Star 3 lecture notes",
+              "summary": "Lecture notes on open, non-proprietary battery data formats.",
+              "content_path": "modules/star-3/lessons/star-3-notes.md",
+              "duration": "7 min"
+            },
+            {
+              "id": "fsbd-star-3-notebook",
+              "kind": "notebook",
+              "title": "Star 3 notebook",
+              "summary": "Notebook for exporting the same dataset to multiple open formats.",
+              "content_path": "modules/star-3/lessons/star-3-notebook.ipynb",
+              "duration": "20 min",
+              "rendered_path": "exports/notebooks/modules/star-3/lessons/star-3-notebook.html",
+              "rendered_media_type": "text/html",
+              "renderer": "nbconvert-html"
+            },
+            {
+              "id": "fsbd-star-3-assignment",
+              "kind": "assignment",
+              "title": "Star 3 self-check",
+              "summary": "Assignment to confirm understanding of open format choices.",
+              "content_path": "modules/star-3/lessons/star-3-exercises.md",
+              "duration": "5 min"
+            }
+          ]
+        },
+        {
+          "id": "fsbd-lesson-star-4",
+          "module_id": "fsbd-five-star-battery-data",
+          "slug": "annotate-battery-metadata",
+          "title": "Lesson 5: Annotate battery metadata",
+          "summary": "Work through semantic metadata with a walkthrough, lecture notes, notebook, and assignment.",
+          "order": 4,
+          "duration": "45 min",
+          "overview_path": "modules/course/lessons/lesson-5-overview.md",
+          "resources": [
+            {
+              "title": "Star 4 structured battery data CSV",
+              "path": "modules/star-4/artifacts/structured_battery_data.bdf.csv",
+              "media_type": "text/csv"
+            },
+            {
+              "title": "Star 4 metadata JSON-LD",
+              "path": "modules/star-4/artifacts/metadata.jsonld",
+              "media_type": "application/ld+json"
+            }
+          ],
+          "components": [
+            {
+              "id": "fsbd-star-4-video",
+              "kind": "video",
+              "title": "Star 4 video walkthrough",
+              "summary": "Overview of ontologies, JSON-LD, and semantic metadata.",
+              "href": "https://www.youtube.com/watch?v=m9oDgkXUCLw",
+              "duration": "8 min"
+            },
+            {
+              "id": "fsbd-star-4-notes",
+              "kind": "lecture-notes",
+              "title": "Star 4 lecture notes",
+              "summary": "Lecture notes on ontology-aligned metadata and machine-readable meaning.",
+              "content_path": "modules/star-4/lessons/star-4-notes.md",
+              "duration": "7 min"
+            },
+            {
+              "id": "fsbd-star-4-notebook",
+              "kind": "notebook",
+              "title": "Star 4 notebook",
+              "summary": "Notebook for describing a dataset with semantic metadata and JSON-LD.",
+              "content_path": "modules/star-4/lessons/star-4-notebook.ipynb",
+              "duration": "25 min",
+              "rendered_path": "exports/notebooks/modules/star-4/lessons/star-4-notebook.html",
+              "rendered_media_type": "text/html",
+              "renderer": "nbconvert-html"
+            },
+            {
+              "id": "fsbd-star-4-assignment",
+              "kind": "assignment",
+              "title": "Star 4 self-check",
+              "summary": "Assignment to confirm understanding of ontologies and metadata structure.",
+              "content_path": "modules/star-4/lessons/star-4-exercises.md",
+              "duration": "5 min"
+            }
+          ]
+        },
+        {
+          "id": "fsbd-lesson-star-5",
+          "module_id": "fsbd-five-star-battery-data",
+          "slug": "link-battery-data-to-the-graph",
+          "title": "Lesson 6: Link battery data to the graph",
+          "summary": "Complete the five-star ladder with linked-data concepts, notes, notebook work, and a self-check assignment.",
+          "order": 5,
+          "duration": "40 min",
+          "overview_path": "modules/course/lessons/lesson-6-overview.md",
+          "resources": [],
+          "components": [
+            {
+              "id": "fsbd-star-5-video",
+              "kind": "video",
+              "title": "Star 5 video walkthrough",
+              "summary": "Overview of linked data and external identifier reuse.",
+              "href": "https://www.youtube.com/watch?v=qS4qWPDYq_s",
+              "duration": "8 min"
+            },
+            {
+              "id": "fsbd-star-5-notes",
+              "kind": "lecture-notes",
+              "title": "Star 5 lecture notes",
+              "summary": "Lecture notes on linked battery data and knowledge graph connections.",
+              "content_path": "modules/star-5/lessons/star-5-notes.md",
+              "duration": "7 min"
+            },
+            {
+              "id": "fsbd-star-5-notebook",
+              "kind": "notebook",
+              "title": "Star 5 notebook",
+              "summary": "Notebook for linking metadata to external knowledge sources.",
+              "content_path": "modules/star-5/lessons/star-5-notebook.ipynb",
+              "duration": "20 min",
+              "rendered_path": "exports/notebooks/modules/star-5/lessons/star-5-notebook.html",
+              "rendered_media_type": "text/html",
+              "renderer": "nbconvert-html"
+            },
+            {
+              "id": "fsbd-star-5-assignment",
+              "kind": "assignment",
+              "title": "Star 5 self-check",
+              "summary": "Assignment to confirm understanding of linked data and graph integration.",
+              "content_path": "modules/star-5/lessons/star-5-exercises.md",
+              "duration": "5 min"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "schema_version": "battery-genome-learning-module/v1alpha1",
+      "id": "fsbd-applications",
+      "course_id": "five-star-battery-data",
+      "slug": "applications",
+      "title": "Applications",
+      "summary": "Finish the course by connecting the five-star framework to applied examples, reflection, and assessment.",
+      "order": 3,
+      "duration": "20 min",
+      "lesson_kinds": [
+        "lecture-notes",
+        "video",
+        "quiz"
+      ],
+      "outcomes": [
+        "See how the framework applies in practice",
+        "Reflect on how the course connects to real battery-data workflows",
+        "Complete the final assessment and review next steps"
+      ],
+      "repo_path": "modules/capstone",
+      "legacy_source_paths": [
+        "mooc/applications/applications.rst",
+        "mooc/discussion/discussion.rst",
+        "mooc/quiz/quiz.rst",
+        "mooc/summary/summary.rst"
+      ],
+      "linked_dataset_ids": [],
+      "linked_model_ids": [],
+      "linked_cell_ids": [],
+      "linked_parameter_set_ids": [],
+      "linked_benchmark_workflow_ids": [],
+      "supporting_asset_paths": [],
+      "artifacts": [],
+      "lessons": [
+        {
+          "id": "fsbd-lesson-capstone",
+          "module_id": "fsbd-applications",
+          "slug": "applications-reflection-and-assessment",
+          "title": "Lesson 7: Applications, reflection, and assessment",
+          "summary": "Finish the MOOC with applications, discussion, a final quiz, and next steps.",
+          "order": 1,
+          "duration": "20 min",
+          "overview_path": "modules/course/lessons/lesson-7-overview.md",
+          "resources": [],
+          "components": [
+            {
+              "id": "fsbd-capstone-applications-notes",
+              "kind": "lecture-notes",
+              "title": "Applications overview",
+              "summary": "Notes introducing practical applications of the five-star framework.",
+              "content_path": "modules/capstone/lessons/applications.md",
+              "duration": "4 min"
+            },
+            {
+              "id": "fsbd-capstone-demo-1",
+              "kind": "video",
+              "title": "Application demo 1",
+              "summary": "Short demonstration of a five-star workflow in practice.",
+              "href": "https://www.youtube.com/watch?v=FuKcv8sDW4s",
+              "duration": "2 min"
+            },
+            {
+              "id": "fsbd-capstone-demo-2",
+              "kind": "video",
+              "title": "Application demo 2",
+              "summary": "Second applied example of structured, linked battery data.",
+              "href": "https://www.youtube.com/watch?v=ETMbHxYY6lo",
+              "duration": "2 min"
+            },
+            {
+              "id": "fsbd-capstone-demo-3",
+              "kind": "video",
+              "title": "Application demo 3",
+              "summary": "Third demonstration linking the course to real workflows.",
+              "href": "https://www.youtube.com/watch?v=powSoiDHXt0",
+              "duration": "2 min"
+            },
+            {
+              "id": "fsbd-capstone-discussion-video",
+              "kind": "video",
+              "title": "Student discussion",
+              "summary": "Discussion on experiences applying Five-Star Battery Data in research settings.",
+              "content_path": "modules/capstone/lessons/discussion.md",
+              "href": "https://www.youtube.com/watch?v=K3Kqk8M3QO0",
+              "duration": "5 min"
+            },
+            {
+              "id": "fsbd-capstone-quiz",
+              "kind": "quiz",
+              "title": "Course quiz",
+              "summary": "Final assessment delivered through the course Google Form.",
+              "content_path": "modules/capstone/lessons/quiz.md",
+              "href": "https://docs.google.com/forms/d/e/1Naj85GWtMkeW9BG2bAmkUNTYnSXHFXHhA2pxY6eodkc/viewform",
+              "duration": "10 min"
+            },
+            {
+              "id": "fsbd-capstone-summary",
+              "kind": "lecture-notes",
+              "title": "Summary and next steps",
+              "summary": "Short recap of the five-star ladder and suggestions for applying it to your own datasets.",
+              "content_path": "modules/capstone/lessons/summary.md",
+              "duration": "5 min"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

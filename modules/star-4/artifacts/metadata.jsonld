@@ -1,0 +1,56 @@
+{
+  "@context": "https://w3id.org/emmo/domain/battery/context",
+  "@graph": [
+    {
+      "@type": "BatteryTest",
+      "hasTestObject": {
+        "@type": "LithiumIonPolymerBattery",
+        "hasPositiveElectrode": {
+          "@type": "Electrode",
+          "hasActiveMaterial": {
+            "@type": "LithiumCobaltOxide"
+          }
+        },
+        "hasNegativeElectrode": {
+          "@type": "Electrode",
+          "hasActiveMaterial": {
+            "@type": "Graphite"
+          }
+        },
+        "hasElectrolyte": {
+          "@type": "PolymerElectrolyte"
+        },
+        "hasProperty": [
+          {
+            "@type": "NominalCapacity",
+            "hasNumericalPart": {
+              "@type": "RealData",
+              "hasNumberValue": 6500
+            },
+            "hasMeasurementUnit": "emmo:MilliAmpereHour"
+          },
+          {
+            "@type": "NominalVoltage",
+            "hasNumericalPart": {
+              "@type": "RealData",
+              "hasNumberValue": 3.8
+            },
+            "hasMeasurementUnit": "emmo:Volt"
+          }
+        ]
+      },
+      "hasOutput": {
+        "@type": [
+          "BatteryTestResult",
+          "dcat:Dataset"
+        ],
+        "dcat:distribution": {
+          "@type": "dcat:Distribution",
+          "dcat:mediaType": "application/vnd.apache.parquet",
+          "dcat:downloadURL": "https://zenodo.org/records/15127867/files/sintef__melasta-slpba842124hv-2024-10-23-15077312__rate-testing.bdf.parquet",
+          "csvw:tableSchema": "https://w3id.org/battery-data-alliance/ontology/battery-data-format/schema"
+        }
+      }
+    }
+  ]
+}
