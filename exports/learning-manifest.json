@@ -1,6 +1,6 @@
 {
   "schema_version": "battery-genome-learning-export/v1alpha1",
-  "generated_at": "2026-03-14T14:38:50Z",
+  "generated_at": "2026-03-25T21:26:47Z",
   "generated_from": {
     "course": "course.json",
     "modules_dir": "modules"
